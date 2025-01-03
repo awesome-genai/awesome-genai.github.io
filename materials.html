@@ -1,0 +1,214 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>AIST 5030: Generative Artificial Intelligence</title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <link href="css/style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div class="container">
+    <table border="0" align="center">
+      <tr>
+        <td width="160" align="right"><a href="http://groups.csail.mit.edu/vision"><img src="images/CUHK_logo.png"
+              width="144" height="114" border="0" style="margin-top:10px;"></a></td>
+        <td width="623" align="center" valign="middle">
+          <h3>The Chinese University of Hong Kong</h3>
+          <span class="title">AIST 5030: Generative Artificial Intelligence</span>
+          <p></p>
+          <p><font size="4"> <b>Spring 2025</b></font></p>
+          <span class="menubar"><a href="index.html">Home</a> | <a
+              href="grading.html">Grading</a> | <a href="schedule.html">Schedule</a> | <a href="materials.html">Resource</a> | <a
+              href="https://piazza.com/cuhk.edu.hk/spring2025/aist5030">Piazza </a> | <a
+              href="TBA">Canvas</a></span>
+        </td>
+        <td width="160" align="left"></td>
+
+      <!-- <tr>
+      <td colspan="3" align="center"><h2 style="background-color:#FFA07A;"><a href="https://mit.zoom.us/j/92273651703">Zoom link for class</a></h2></td>
+    </tr> -->
+    </table>
+    <br>
+  <p>&nbsp;</p>
+  <!--<p>We have an <a href="http://nb.csail.mit.edu/">nb group</a> for managing comments and discussion on the class notes (visible to registered students; <strong>requires Firefox &gt;=3.6</strong>).</p>-->
+  <!--<p>&nbsp;</p>
+  <table width="564" border="0" class="notes">
+    <tr>
+      <td width="100" valign="top">Lecture 1</td>
+      <td width="250" valign="top">A Simple Vision System</td>
+      <td width="200" valign="top">
+	<a href="notes/chapter_01_simplesystem.pdf">Lecture notes</a> (Sep 6, 2012)<br />
+	Slides:
+	<a href="lectures/lecture1.pptx">ppt</a> | <a href="lectures/lecture1.pdf">pdf</a><br />
+      </td>
+    </tr>
+    <tr>
+      <td width="100" valign="top">Lecture 2</td>
+      <td width="250" valign="top">Linear Filters</td>
+      <td width="200" valign="top">No note. Refer to Chapter 3 of [Sz].
+	Slides:
+	<a href="lectures/lecture2linarfilters/lecture2linearfilters.pptx">ppt</a> | <a href="lectures/lecture2linarfilters/lecture2linearfilters.pdf">pdf</a><br />
+      </td>
+    </tr>
+    <tr>
+      <td width="100" valign="top">Lecture 3</td>
+      <td width="250" valign="top">Pyramids and scale space</td>
+      <td width="200" valign="top">No note. Refer to Chapter 3 of [Sz].
+  Slides:
+  <a href="lectures/lecture3pyramids/lecture3pyramids.ppt">ppt</a> | <a href="lectures/lecture3pyramids/lecture3pyramids.pdf">pdf</a> | <a href="lectures/lecture3pyramids/lecture3pyramids.key">keynote</a><br />
+      </td>
+    </tr>
+    <tr>
+      <td width="100" valign="top">Lecture 4</td>
+      <td width="250" valign="top">Image statistics I</td>
+      <td width="200" valign="top"> Slides:
+  <a href="lectures/lecture4statisticalmodels/lecture4.pptx">ppt</a> |   <a href="lectures/lecture4statisticalmodels/lecture4.pdf">pdf</a>
+<br />
+      </td>
+    </tr>
+    <tr>
+      <td width="100" valign="top">Lecture 5</td>
+      <td width="250" valign="top">Image statistics II</td>
+      <td width="200" valign="top"> Slides: <a href="lectures/lecture5staticticalmodels/lecture5.pptx">ppt</a> |   <a href="lectures/lecture5staticticalmodels/lecture5.pdf">pdf</a>
+      </td>
+    </tr>
+    <tr>
+      <td width="100" valign="top">Lecture 6</td>
+      <td width="250" valign="top">Color</td>
+      <td width="200" valign="top"> Slides: <a href="lectures/lecture6/06color2011revision2012.key">keynote</a> | <a href="lectures/lecture6/06color2011revision2012.pdf">pdf</a>
+      </td>
+    </tr>
+    <tr>
+      <td width="100" valign="top">Lecture 7</td>
+      <td width="250" valign="top">Texture</td>
+      <td width="200" valign="top"> Slides: <a href="lectures/lecture7texture/lecture7.pptx">ppt</a> | <a href="lectures/lecture7texture/lecture7.pdf">pdf</a>
+      </td>
+    </tr>
+    <tr>
+      <td width="100" valign="top">Lecture 8</td>
+      <td width="250" valign="top">Edge and Segmentation</td>
+      <td width="200" valign="top"> Slides: <a href="lectures/lecture8segmentation/lecture8segmentation.pptx">ppt</a> | <a href="lectures/lecture8segmentation/lecture8segmentation.pdf">pdf</a>
+      </td>
+    </tr>
+    <tr>
+      <td width="100" valign="top">Lecture 9</td>
+      <td width="250" valign="top">Image Formulation Models</td>
+      <td width="200" valign="top"> Slides: <a href="lectures/lecture9imageformation/lecture9imageformation.pptx">ppt</a> | <a href="lectures/lecture9imageformation/lecture9imageformation.pdf">pdf</a>
+      </td>
+    </tr>
+    <tr>
+      <td width="100" valign="top">Lecture 10</td>
+      <td width="250" valign="top">Image Formulation Models</td>
+      <td width="200" valign="top"> Slides: <a href="lectures/lecture10calibrationAndStereo/lecture10imageformation.pptx">ppt</a> | <a href="lectures/lecture10calibrationAndStereo/lecture10imageformation.pdf">pdf</a>
+      </td>
+    </tr>
+    <tr>
+      <td width="100" valign="top">Lecture 11</td>
+      <td width="250" valign="top">Shape from X</td>
+      <td width="200" valign="top"> Slides: <a href="lectures/lecture11shapefromX/lecture11shapefromX.pptx">ppt</a> | <a href="lectures/lecture11shapefromX/lecture11shapefromX.pdf">pdf</a>
+      </td>
+    </tr>
+    <tr>
+      <td width="100" valign="top">Lecture 12</td>
+      <td width="250" valign="top">Image features</td>
+      <td width="200" valign="top"> Slides: <a href="lectures/lecture12imagefeatures/lecture12imagefeatures.pptx">ppt</a> | <a href="lectures/lecture12imagefeatures/lecture12imagefeatures.pdf">pdf</a>
+      </td>
+    </tr>
+    <tr>
+      <td width="100" valign="top">Lecture 13</td>
+      <td width="250" valign="top">Homographies and RANSAC</td>
+      <td width="200" valign="top"> Slides: <a href="lectures/lecture13ransac/lecture13ransac.pptx">ppt</a> | <a href="lectures/lecture13ransac/lecture13ransac.pdf">pdf</a>
+      </td>
+    </tr>
+    <tr>
+      <td width="100" valign="top">Lecture 14</td>
+      <td width="250" valign="top">Multi-view 3D Reconstruction</td>
+      <td width="200" valign="top"> Slides: <a href="lectures/lecture3D/SFMedu.pptx">ppt</a> | <a href="lectures/lecture3D/SFMedu.pdf">pdf</a>
+      </td>
+    </tr>
+    <tr>
+      <td width="100" valign="top">Lecture 15</td>
+      <td width="250" valign="top">Markov Random Field</td>
+      <td width="200" valign="top"> <a href="notes/slideNotesCh7.pdf">Lecture notes</a> <br/>Slides: <a href="lectures/lecture15mrf/MRF2012.pdf">pdf</a>
+      </td>
+    </tr>
+    <tr>
+      <td width="100" valign="top">Lecture 16</td>
+      <td width="250" valign="top">Motion I</td>
+      <td width="200" valign="top">Slides: <a href="lectures/lecture16/MotionEstimation1.pdf">pdf</a>
+      </td>
+    </tr>
+    <tr>
+      <td width="100" valign="top">Lecture 17</td>
+      <td width="250" valign="top">Motion II</td>
+      <td width="200" valign="top">Slides: <a href="lectures/lecture17/MotionEstimation2.pdf">pdf</a>
+      </td>
+    </tr>
+    <tr>
+      <td width="100" valign="top">Lecture 18</td>
+      <td width="250" valign="top">Object Recognition I</td>
+      <td width="200" valign="top">Slides: <a href="lectures/lecture18/lecture18objectrecogntion1.pptx">ppt</a>
+      </td>
+    </tr>
+    <tr>
+      <td width="100" valign="top">Lecture 19</td>
+      <td width="250" valign="top">Object Recognition II</td>
+      <td width="200" valign="top">Slides: <a href="lectures/lecture19objectrec2/lecture19objectrecognition2.pptx">ppt</a> | <a href="lectures/lecture19objectrecognition2.pdf">pdf</a>
+      </td>
+    </tr>
+    <tr>
+      <td width="100" valign="top">Lecture 20</td>
+      <td width="250" valign="top">Object Recognition III</td>
+      <td width="200" valign="top">Slides: <a href="lectures/lecture20objectrecg3/lecture20objectrecognition3.pptx">ppt</a> | <a href="lectures/lecture20objectrecognition3.pdf">pdf</a>
+      </td>
+    </tr>
+    <tr>
+      <td width="100" valign="top">Lecture 21</td>
+      <td width="250" valign="top">Object Recognition V</td>
+      <td width="200" valign="top">Slides: <a href="lectures/lecture21objectrecognition4/lecture21objectrecognition4.pptx">ppt</a> | <a href="lectures/lecture21objectrecognition4.pdf">pdf</a>
+      </td>
+    </tr>
+    <tr>
+      <td width="100" valign="top">Lecture 22</td>
+      <td width="250" valign="top">Scene Understanding</td>
+      <td width="200" valign="top">Slides: <a href="lectures/lecture22sceneunderstanding/lecture22.pptx">ppt</a>
+         | <a href="lectures/lecture22.pdf">pdf</a>
+      </td>
+    </tr>
+    <tr>
+      <td width="100" valign="top">Lecture 23</td>
+      <td width="250" valign="top">Scene Understanding</td>
+      <td width="200" valign="top">Slides: <a href="lectures/lecture23sceneunderstanding/lecture23.pptx">ppt</a>
+         | <a href="lectures/lecture23.pdf">pdf</a>
+      </td>
+    </tr>
+  </table>
+	</table>-->
+  <h3><a name="books" id="books"></a>Books</h3>
+  <p>Computer vision:</p>
+  <ul>
+    <li><strong>[Sz]</strong> Szeliski, <em><a href="http://www.amazon.com/Computer-Vision-Algorithms-Applications-Science/dp/1848829345/">Computer Vision: Algorithms and Applications</a>, </em>Springer, 2010 (<a href="http://szeliski.org/Book/">online draft</a>)</li>
+    <li> <strong>[HZ]</strong> Hartley and Zisserman, <em><a href="http://www.amazon.com/Multiple-View-Geometry-Computer-Vision/dp/0521540518">Multiple View Geometry in Computer Vision</a></em>, Cambridge University Press, 2004</li>
+    <li><strong>[FP]</strong> Forsyth and Ponce, <em><a href="http://www.amazon.com/Computer-Vision-Approach-David-Forsyth/dp/0130851981">Computer Vision: A Modern Approach</a></em>, Prentice Hall, 2002</li>
+    <li><strong>[Pa]</strong> Palmer, <a href="http://www.amazon.com/Vision-Science-Phenomenology-Stephen-Palmer/dp/0262161834/">Vision Science</a>, MIT Press, 1999</li>
+  </ul>
+  <p>Learning:</p>
+  <ul>
+      <li><strong>[GBC]</strong> Goodfellow, Bengio, Courville, <em><a href="https://www.deeplearningbook.org/">Deep Learning</a>, </em>MIT Press, 2016</li>
+              <li><strong>[Mi]</strong> Mitchel, <em><a href="http://www.amazon.com/Machine-Learning-Tom-M-Mitchell/dp/0070428077/">Machine Learning</a>, </em>McGraw-Hill, 1997</li>
+	              <li><strong>[DHS]</strong> Duda, Hart and Stork, <em><a href="http://www.amazon.com/Pattern-Classification-2nd-Richard-Duda/dp/0471056693">Pattern Classification (2nd Edition)</a></em>, Wiley-Interscience, 2000</li>
+		              <li><strong>[SB]</strong> Sutton & Barto, <em><a href="http://incompleteideas.net/book/the-book-2nd.html">On-line book. The classic reference to the field of reinforcement learning.</a></em></li>
+  </ul>
+  <p>Graphical models:</p>
+  <ul>
+					<li><strong>[KF]</strong> Koller and Friedman, <em><a href="http://www.amazon.com/Probabilistic-Graphical-Models-Principles-Computation/dp/0262013193/">Probabilistic Graphical Models: Principles and Techniques</a></em>, MIT Press, 2009</li>
+  </ul>
+
+  <p>&nbsp;</p>
+</div>
+</body>
+</html>
